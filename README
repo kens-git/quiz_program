@@ -1,0 +1,17 @@
+CLI usage:
+
+0 filename.csv # all questions from filename.csv
+10 filename.csv # 10 questions from filename.csv
+0 /categories/path/to/dir # all questions from all files from the specified directory
+0 /categories/path /categories/otherpath # all questions from specified directories
+
+
+
+csv file layout (exclude any sort of header in first row):
+
+QUESTION	
+ANSWER 1
+ANSWER 2	
+ANSWER 3	
+ANSWER 4	
+RIGHT ANSWER	
