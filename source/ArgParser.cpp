@@ -57,7 +57,9 @@ vector<string> ArgParser::parse(int argc, char** argv) {
                 }
             }
         } catch (fs::filesystem_error& e) {
-            cout << "Could not find file/directory " << tempPath << endl;
+            // We only catch directories that can't be found, because file errors won't
+            // be known until we attempt to open them
+            cout << "Could not find directory " << tempPath << endl;
         }
     }
     

@@ -18,6 +18,8 @@ void QuizProgram::start(int numQs, bool shuffle) {
     int numAnsweredQs = 0;
     int rightAnswers = 0;
     int wrongAnswers = 0;
+    // total number of questions that the user will answer
+    int quizLength = numQs > mQuiz->numQuestions() ? mQuiz->numQuestions() : numQs;
 
     int input = 0;
 
@@ -25,6 +27,10 @@ void QuizProgram::start(int numQs, bool shuffle) {
 
 
     while (numAnsweredQs < numQs && mQuiz->numQuestions() > 0) {
+        cout << rightAnswers << " of " << numAnsweredQs << " correct." << endl << endl;
+        cout << numAnsweredQs + 1 << "/" << quizLength << ")\t";
+
+
         cout << mQuiz->getQuestion() << endl << endl;
 
         do {
@@ -63,10 +69,6 @@ void QuizProgram::start(int numQs, bool shuffle) {
         cin.ignore(INT_MAX,'\n');
 
         clearScreen();
-
-        // TODO: Add remaining questions count to output
-        cout << rightAnswers << "/" << numAnsweredQs << endl << endl << endl;
-
     }
 
     cout << rightAnswers << " out of " << numAnsweredQs << " correct." << endl;
