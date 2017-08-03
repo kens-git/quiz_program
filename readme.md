@@ -4,13 +4,9 @@ A generically titled Quiz Program that reads in questions from csv files and pre
 
 The QuizParser uses CSVparser to read in the questions from column one and the answers from column two of each row, so the csv file should look like this:<br/>
 
-<style>
-    .border { border-color: black; border-width: 1px; }
-</style>
-
 <table class="border">
     <tr>
-        <th</th><th>A</th><th>B</th>
+        <th></th><th>A</th><th>B</th>
     </tr>
     <tr>
         <td>1</td>
