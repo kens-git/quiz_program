@@ -1,5 +1,7 @@
 A generically titled Quiz Program that reads in questions from csv files and presents them to the user. Inspired by my habit of taking extensive notes and then never reading them, now, they can be reviewed in the form of a quiz.<br/>
 
+Quizzes can be create by either specifying a single file, multiple files, a single directory (recursively), or multiple directories (recursively).
+
 <h3>CSV file layout</h3>
 
 The QuizParser uses CSVparser to read in the questions from column one and the answers from column two of each row, so the csv file should look like this:<br/>
@@ -35,6 +37,10 @@ The QuizParser uses CSVparser to read in the questions from column one and the a
     <tr>
         <td>./quiz 10 filename.csv</td>
         <td>10 questions from filename.csv</td>
+    </tr>
+    <tr>
+        <td>./quiz 25 filename1.csv filename2.csv</td>
+        <td>25 questions from multiple files</td>
     </tr>
     <tr>
         <td>./quiz 0 /path/to/dir</td>
