@@ -1,6 +1,6 @@
 A generically titled Quiz Program that reads in questions from csv files and presents them to the user. Inspired by my habit of taking extensive notes and then never reading them, now, they can be reviewed in the form of a quiz.<br/>
 
-Quizzes can be create by either specifying a single file, multiple files, a single directory (recursively), or multiple directories (recursively).
+Quizzes can be create by either specifying a single file, multiple files, a single directory (recursively), or multiple directories (recursively). Specifying filenames results in the program recursively searching the root 'categories' directory until it finds the first instance of the filename, so it's not recommended to have duplicate filenames.
 
 <h3>CSV file layout</h3>
 
